@@ -128,7 +128,7 @@ void forgot(){
 
         default:
         cout<<"\t\t\tWrong Choice Please try again!\n";
-        forget();
+        forgot();
 
     }
 }
