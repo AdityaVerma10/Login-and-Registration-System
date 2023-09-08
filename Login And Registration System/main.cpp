@@ -4,7 +4,7 @@
 using namespace std;
 void login();
 void reg();
-void forget();
+void forgot();
 int main(){
     int c;
     cout<<"\t\t\t____________________________________________________"<<endl<<endl;
@@ -13,7 +13,7 @@ int main(){
     cout<<"\t----------- Menu ----------\n";
     cout<<"\tPress 1 for Login: "<<endl;
     cout<<"\tPress 2 for Registration: "<<endl;
-    cout<<"\tPress 3 for Forget Password: "<<endl;
+    cout<<"\tPress 3 for Forgot Password: "<<endl;
     cout<<"\tPress 4 for Exit: "<<endl;
     cout<<"\tEnter Your Choice:";
     cin>>c;
@@ -28,7 +28,7 @@ int main(){
         break;
 
         case 3:
-        forget();
+        forgot();
         break;
 
         case 4:
@@ -86,11 +86,11 @@ void reg(){
     cout<<"\n\t Registration is Successfull !\n";
     main();
 }
-void forget(){
+void forgot(){
     int option;
     system("cls");
     cout<<"---------------------------------------------------------------------------------\n";
-    cout<<"\t\tYour forget the Password no worries! Please Select Option: \n";
+    cout<<"\t\tYour forgot the Password no worries! Please Select Option: \n";
     cout<<"---------------------------------------------------------------------------------\n";
     cout<<"\t\tPress 1 for search your id from username\n";
     cout<<"\t\tPress 2 for go back to main menu\n";
