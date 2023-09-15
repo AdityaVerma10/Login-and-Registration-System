@@ -2,46 +2,9 @@
 #include<fstream>
 #include<string>
 using namespace std;
-void login();
-void reg();
-void forgot();
-int main(){
-    int c;
-    cout<<"\t\t\t____________________________________________________"<<endl<<endl;
-    cout<<"\t\t\t                   Welcome to Login Page             "<<endl;
-    cout<<"\t\t\t_____________________________________________________"<<endl<<endl;
-    cout<<"\t----------- Menu ----------\n";
-    cout<<"\tPress 1 for Login: "<<endl;
-    cout<<"\tPress 2 for Registration: "<<endl;
-    cout<<"\tPress 3 for Forgot Password: "<<endl;
-    cout<<"\tPress 4 for Exit: "<<endl;
-    cout<<"\tEnter Your Choice:";
-    cin>>c;
 
-    switch(c){
-        case 1:
-        login();
-        break;
+int main();
 
-        case 2:
-        reg();
-        break;
-
-        case 3:
-        forgot();
-        break;
-
-        case 4:
-        cout<<"\t\t\t Thankyou!!!\n\n   "<<endl;
-        break;
-
-        default:
-        system("cls");
-        cout<<"\t\t Please Select Valid Option:"<<endl;
-        main();
-    }
-    return 0;
-}
 void login(){
     int count;
     string userId,password,id,pass;
@@ -70,13 +33,14 @@ void login(){
     }
     main();
 }
+
 void reg(){
     string rUserid,rpassword,rid,rpass;
     cout<<"---------------------------------------------------------------------------------\n";
     cout<<"\t\tEnter the UserName and Password for Register\n";
     cout<<"---------------------------------------------------------------------------------\n";
     cout<<"Enter the UserName:";
-    cin>>rUserid;
+     cin>>rUserid;
     cout<<"Enter the Password:";
     cin>>rpassword;
 
@@ -86,6 +50,7 @@ void reg(){
     cout<<"\n\t Registration is Successfull !\n";
     main();
 }
+
 void forgot(){
     int option;
     system("cls");
@@ -129,6 +94,43 @@ void forgot(){
         default:
         cout<<"\t\t\tWrong Choice Please try again!\n";
         forgot();
-
     }
+}
+
+int main(){
+    int c;
+    cout<<"\t\t\t____________________________________________________"<<endl<<endl;
+    cout<<"\t\t\t                   Welcome to Login Page             "<<endl;
+    cout<<"\t\t\t_____________________________________________________"<<endl<<endl;
+    cout<<"\t----------- Menu ----------\n";
+    cout<<"\tPress 1 for Login: "<<endl;
+    cout<<"\tPress 2 for Registration: "<<endl;
+    cout<<"\tPress 3 for Forgot Password: "<<endl;
+    cout<<"\tPress 4 for Exit: "<<endl;
+    cout<<"\tEnter Your Choice:";
+    cin>>c;
+
+    switch(c){
+        case 1:
+        login();
+        break;
+
+        case 2:
+        reg();
+        break;
+
+        case 3:
+        forgot();
+        break;
+
+        case 4:
+        cout<<"\t\t\t Thankyou!!!\n\n   "<<endl;
+        break;
+
+        default:
+        system("cls");
+        cout<<"\t\t Please Select Valid Option:"<<endl;
+        main();
+    }
+    return 0;
 }
